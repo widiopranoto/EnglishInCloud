@@ -1,0 +1,11 @@
+document.write("<div class='body-nav body-nav-horizontal body-nav-fixed'>");
+document.write("<div class='container'>");            
+document.write("<ul>");
+document.write("<li><a href='schedule.html'><i class='icon-calendar icon-large'></i>Schedule</a>");
+document.write("</li><li><a href='journal.html'><i class='icon-book icon-large'></i> Journal</a>");
+document.write("</li><li><a href='attendant_list.html'><i class='icon-list icon-large'></i> Attendant List</a>");
+document.write("</li><li><a href='grades.html'><i class='icon-list-alt icon-large'></i> Grades</a>");
+document.write("</li><li><a href='teacher_files.html'><i class='icon-briefcase icon-large'></i> Teacher's Files</a></li>");
+document.write("/<ul>");
+document.write("</div>");
+document.write("</div>");
