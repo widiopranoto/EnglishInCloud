@@ -1,7 +1,7 @@
-var sche = "<iframe src='https://docs.google.com/spreadsheets/d/1QhWSYjOyVXGbim4p9tD2JDxoco_7U3Y95UQbyqiyqLk/preview' width='100%' height='100%'></iframe>";
-var jour = "<iframe src='https://docs.google.com/spreadsheets/d/1u5P09AJLjQ2h1DOcNeYCFgSgYqnrTy3hdT2xUrchWtA/preview' width='100%' height='100%'></iframe>";
-var atte = "<iframe src='https://docs.google.com/spreadsheets/d/1QOIyewyj3MQz2eOk3gBVmw4AacRRll7rI9w8m3zhzmk/preview' width='100%' height='100%'></iframe>";
-var grad = "<iframe src='https://docs.google.com/spreadsheets/d/1dOLeyPwdLV4TweDUfaZUJOpVjjJ1UOttIvLX1Hb5SVE/preview' width='100%' height='100%'></iframe>";
+var schedule = "https://docs.google.com/spreadsheets/d/1QhWSYjOyVXGbim4p9tD2JDxoco_7U3Y95UQbyqiyqLk";
+var journal = "https://docs.google.com/spreadsheets/d/1u5P09AJLjQ2h1DOcNeYCFgSgYqnrTy3hdT2xUrchWtA";
+var attendant = "https://docs.google.com/spreadsheets/d/1QOIyewyj3MQz2eOk3gBVmw4AacRRll7rI9w8m3zhzmk";
+var grade = "https://docs.google.com/spreadsheets/d/1dOLeyPwdLV4TweDUfaZUJOpVjjJ1UOttIvLX1Hb5SVE";
 var promes_x = "";
 var promes_xi = "https://docs.google.com/spreadsheets/d/e/2PACX-1vQp1yrHhEsV8UbjJGAYSWXNHDuOt4KHRPy_84BfD7i9mRdHchxexrji2u4zinGXkaomh9izOrtXbkMN/pub?gid=1859272054";
 var promes_xii = "https://docs.google.com/spreadsheets/d/e/2PACX-1vQp1yrHhEsV8UbjJGAYSWXNHDuOt4KHRPy_84BfD7i9mRdHchxexrji2u4zinGXkaomh9izOrtXbkMN/pub?gid=1844983322";
@@ -30,6 +30,15 @@ function writeAttendant() {
 }
 function writeGrades() {
     document.write(grad);
+}
+function edit(link) {
+    var toBeWritten = `<a href=` + link + `/edit#gid=0` + ` class="btn btn-info" role="button">
+        <i class="icon-edit"></i>Edit</a></br></br>`;
+    document.write(toBeWritten);
+}
+function showMain(link) {
+    var toBeWritten = `<iframe src=` + link + `/preview` + ` height="100%" width="100%"></iframe>`;
+    document.write(toBeWritten);
 }
 function show(link) {
     var toBeWritten = `<iframe src=` + link + `&amp;single=true&amp;widget=true&amp;headers=false` + ` height="100%" width="100%"></iframe>`;
